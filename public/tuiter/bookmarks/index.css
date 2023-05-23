@@ -1,3 +1,227 @@
 /* CSS file to style bookmarks-css.html */
 
+.wd-center-smaller-div{
+    width: 600px;
+    padding-left : 2%;
+    padding-right : 2%;
 
+}
+
+.wd-same-line-div-bar{
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.wd-head-bookmark{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-recolor{
+    color: black;
+}
+.wd-bookmark-pad{
+    width : 200px;
+    margin-left: 20%;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.wd-icon{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+}
+
+.wd-bookmark{
+    padding-top: 12px;
+
+}
+
+.wd-bookmark-same-line{
+    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.wd-float-right{
+    justify-content: right;
+}
+
+.wd-user{
+    white-space: nowrap;
+}
+
+.wd-usertag{
+    padding-left: 7px;
+    color: gray;
+}
+
+div{
+    margin: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+ul{
+    padding: 0; /* Remove padding */
+    margin: 0;
+}
+
+.wd-dot-link{
+    position: relative;
+    left: 96%;
+    font-weight: bold;
+    color: gray;
+}
+
+.wd-gray-13 {
+    font-size: 13px;
+    color: gray;
+}
+.wd-title-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+.wd-title-main{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.wd-title-more {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(29, 161, 242);
+}
+.wd-info-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.wd-avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+.wd-info-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.wd-info-first {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.wd-info-author {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.wd-info-content{
+    font-size: 15px;
+    max-width: 506px;
+    margin-bottom: 12px;
+}
+.wd-info-content2 {
+    border-radius: 12px;
+    max-width: 475px;
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+.wd-info-mainimage {
+    width: 475px;
+    height: 264px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-top: 0;
+}
+.wd-info-text {
+    padding: 12px;
+    max-width: 480px;
+}
+.wd-info-gray {
+    margin-top: 5px;
+    color: rgb(110, 118, 125);
+}
+.wd-info-address {
+    margin-top: 8px;
+}
+.wd-info-links {
+    margin-top: 12px;
+    display: flex;
+    max-width: 450px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.wd-info-icon {
+    display: flex;
+}
+.wd-info-selected {
+    color: lightgray;
+}
+.wd-info-number {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.wd-below-image{
+    padding-left: 5px;
+    padding-top: 0;
+}
+
+.wd-start-text{
+    color : grey;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+   
+}
+
+.wd-image-state-ret-like{
+    height: 20px;
+    width: 20px;
+}
+
+.wd-image-state-up{
+    height: 15px;
+    width: 15px;
+    padding-left: 7px;
+}
+
+.wd-like-col{
+    color : grey;
+    font-size: 13px;
+}
