@@ -1,0 +1,30 @@
+.wd-nav-bar{
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: rgb(110, 118, 125);
+}
+
+.wd-top-border{
+    border: solid;
+    border-top-color: lightgray;
+    border-left-color: lightgray;
+    border-right-color: lightgray;
+    border-bottom : None;
+}
+
+.wd-bottom-border{
+    border: solid;
+    border-top: None;
+    border-top-width: 0;
+    border-left-color: lightgray;
+    border-right-color: lightgray;
+    border-bottom-color: lightgray;
+
+}
+
+.wd-seperator{
+    border: solid;
+    border-color: lightgray;
+}
