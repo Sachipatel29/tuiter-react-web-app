@@ -1,0 +1,204 @@
+/*CSS file to style explore-css.html */
+
+.wd-magnifyglass{
+    height: 18px;
+    width: 18px;
+    position:static;
+    top : 2.5px;
+    left : 40px
+}
+
+.wd-search_barbox{
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: lightgray;
+    width : 87%;
+    height : 30px;
+    border: None;
+}
+
+.wd-search_barbox::placeholder{
+    position: relative;
+    margin-left : 200px
+}
+
+.wd-search_bar_boot::placeholder{
+    position: relative;
+    margin-left : 200px
+}
+
+.wd-settinggear{
+    position : relative;
+    top : 5px;
+    left : 4%;
+}
+
+.wd-selected{
+    border: solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: lightskyblue;
+    padding-bottom: 0;
+    border-bottom-width: 3px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    color: black;
+}
+
+.wd-nav-bar{
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: rgb(110, 118, 125);
+}
+
+.wd-nav-tab{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+
+.a{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+
+.wd-left_td{
+    border-left-color: lightgray;
+}
+
+.wd-top_td{
+    border-top-color: lightgray;
+}
+
+.wd-bottom_td{
+    border-bottom-color: lightgray;
+}
+
+.wd-right_td{
+    border: solid;
+    border-color: white;
+    border-right-color: lightgray;
+
+}
+
+.wd-bottom-left-maintitle {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    color: white;
+    font-size: 30px;
+}
+
+td{
+    padding: 0;
+}
+
+
+.wd-trend, .wd-numberof_tweets{
+    color: gray;
+}
+
+.wd-trend{
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 4px;
+}
+
+.wd-numberof_tweets{
+    padding-top: 4px;
+}
+
+.wd-tweet_topic{
+    font-weight: bold;
+}
+
+.wd-bottom-links{
+    margin-right: 2%;
+}
+
+.wd-other-links{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.wd-link-dots{
+    font-weight: bold;
+
+}
+
+.wd-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    border-top: solid;
+    border-top-color: lightgray ;
+}
+
+.wd-mid-border{
+    border: solid;
+    border-top: None;
+    border-left-color: lightgray;
+    border-right-color: lightgray;
+    border-bottom : None;
+}
+
+div, ul, li{
+    margin: 0;
+}
+
+td, tr{
+    padding: 0;
+    margin: 0;
+}
+
+.wd-pad-ul, wd-pad-li {
+    list-style-type: none;
+}
+
+.wd-pad-ul{
+    padding: 0;
+    margin: 0;
+}
+
+.wd-pad-seperator{
+    padding-top:3px;
+}
+
+.wd-magni-boot{
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top :2.5px;
+    left : -93%;
+}
+
+.wd-bottom-left-boot{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+
+}
+
+.wd-gray{
+  color: gray;
+}
+
+.wd-fix-width{
+    width : 230px;
+}
+
+.wd-nav-bar-boot{
+    font-weight: bold;
+    color: rgb(110, 118, 125);
+}
+   
