@@ -1,0 +1,63 @@
+DOCTYPE html>
+<html>
+  <head>
+    <title>Tuiter - New Tuit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <table>
+        <tbody>
+            <tr valign="top">
+                <td colspan="2">
+                    <!-- header -->
+                </td>
+            </tr>
+            <tr valign="top">
+                <td  width="9%">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="notifications.html">Notifications</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="bookmarks.html">Bookmarks</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="tuit.html">Tuit</a></li>
+                        <li><a href="reply.html">Reply</a></li>
+                        <li><a href="index.html">Back</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <div style="margin-left: 5%;">
+                        <a href="navigation.html">Back</a>
+                        <h1>Tuiter</h1>
+                        <h2>Tuit</h2>
+                        <img src="sachiprofile.jpg" alt="Profile image" width="48" height="48">
+                        <form>
+                            <textarea placeholder="What's happening?" name="new-tuit"></textarea>
+                            <br>
+                            <label for="reply-settings">Who can reply?</label>
+                            <select id="reply-settings" name="reply-settings">
+                                <option value="EVERYONE" selected>Everyone can reply</option>
+                                <option value="FOLLOWING">People you follow</option>
+                                <option value="MENTIONED">Only people you mention</option>
+                            </select>
+                            <br>
+                            <hr>
+                                <input type="file"/>
+                                <input type="submit" value="Tuit">
+                            <hr>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="2">
+                        <!-- footer -->
+                    </td>
+                </tr>
+                </tbody>
+        </table>
+  </body>
+</html>
