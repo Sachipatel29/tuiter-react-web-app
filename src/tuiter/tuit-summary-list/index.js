@@ -10,9 +10,7 @@ const TuitSummaryList = () => {
        tuits.map(tuit =>
          <TuitSummaryItem
            key={tuit._id} 
-           tuit={tuit}
-           /> 
-           )
+           tuit={tuit}/> )
      }
    </ul>
  );

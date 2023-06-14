@@ -1,14 +1,27 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../vendors/bootstrap/all.min.css';
+
 const NavigationSidebar = () => {
- const { pathname } = useLocation();
- const [ignore, tuiter, active] = pathname.split("/");
- const links = ["home",     "explore",   "notifications", "messages", "bookmarks", "lists", "profile",  "more"];
- return (
-   <div className="list-group">
-     {links.map((link) => 
-         <Link to={`/tuiter/${link}`} className={`list-group-item text-capitalize ${active === link ? "active" : ""}`}>
-           {link}
+  const { currentUser } = useSelector((state) => state.user);
+  const { pathname } = useLocation();
+  const [ignore, tuiter, active] = pathname.split("/");
+  const links = [{name : "home", image : "fa-home"},    {name : "explore", image : "fa-hashtag"},  
+                {name : "notifications", image : "fa-bell"}, {name : "messages", image: "fa-envelope"}, 
+                {name : "bookmarks", image : "fa-bookmark"}, {name : "lists", image : "fa-list"}, {name : "more", image : "fa-ellipsis"}];
+  console.log("user : ", currentUser)
+  return (
+    <div className="list-group" style={{"width": "100%"}}>
+      {!currentUser && <Link className={`list-group-item ${active === "login" ? "active" : ""}`} to="/tuiter/login">   Login   </Link>}
+      {!currentUser && <Link className={`list-group-item ${active === "register" ? "active" : ""}`} to="/tuiter/register">Register</Link>}
+      { currentUser && <Link className={`list-group-item ${active === "profile" ? "active" : ""}`} to="/tuiter/profile"> Profile </Link>}
+      {links.map((link) => 
+          <Link to={`/tuiter/${link.name}`} className={`list-group-item ps-1 text-capitalize col d-flex ${active === link.name ? "active" : ""}`}>
+           
+           <i className={`fa ${link.image} pe-2 pt-2 fa-solid col-12 col-xl-2 col-xxl-2 fa-solid fa-lg border-0 pb-2 list-group-item text-capitalize ${active === link.name ? "active" : ""}`}></i>
+           <div className={'d-none d-xl-block d-xxl-block ps-4'}>{link.name}</div>
          </Link>
      )}
    </div>

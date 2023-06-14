@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 const WhoToFollowList = () => {
   const whoArray = useSelector((state) => state.who);
  return(
-   <ul className="list-group">
+   <ul style={{width: 235}} className="list-group col-12">
      <li className="list-group-item">
        <h3>Who to follow</h3>
      </li>

@@ -5,9 +5,7 @@ import { HiOutlineLocationMarker} from 'react-icons/hi';
 import { BiBold} from 'react-icons/bi';
 import { BiItalic} from 'react-icons/bi';
 import { HiOutlineGif } from 'react-icons/hi2';
-import { BsEmojiSmile } from 'react-icons/bs';
-import { TbCalendarStats } from 'react-icons/tb'
-import {createTuit} from "./reducers/tuits-reducer";
+import { createTuitThunk } from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -18,8 +16,10 @@ const WhatsHappening = () => {
    const newTuit = {
     tuit: whatsHappening
   }
-  dispatch(createTuit(newTuit));
+  dispatch(createTuitThunk(newTuit));
   setWhatsHappening("");
+  console.log(whatsHappening);
+
  }
  return (
    <div className="row">
@@ -40,11 +40,9 @@ const WhatsHappening = () => {
            <AiOutlinePicture className="me-3"></AiOutlinePicture>
            <HiOutlineGif className="me-3"></HiOutlineGif>
            <MdFormatListBulleted className="me-3"></MdFormatListBulleted>
-           <BsEmojiSmile className="me-3"></BsEmojiSmile>
-            {/* <TbCalendarStats className="me-3"></TbCalendarStats> */}
            <HiOutlineLocationMarker className="me-3"></HiOutlineLocationMarker>
-           {/* <BiBold className="me-3"></BiBold> */}
-           {/* <BiItalic className="me-3"></BiItalic> */}
+           <BiBold className="me-3"></BiBold>
+           <BiItalic className="me-3"></BiItalic>
          </div>
        </div>
      </div>
